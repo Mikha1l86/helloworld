@@ -1,4 +1,4 @@
-public class Main {
+class Main {
 
     // work 1
 
@@ -21,9 +21,9 @@ public class Main {
 
     // work 2
 
-    public static void main(String[] args){
+    static {
         double a = 27.12;
-        long b = 987678965549l;
+        long b = 987_678_965_549L;
         float c = 2.786f;
         int d = 569;
         short e = -159;
@@ -35,7 +35,7 @@ public class Main {
 
     // work 3
 
-    public static void main(String[] args){
+    static {
         int studentsLuda = 23;
         int studentsAnna = 27;
         int studentsKaty = 30;
@@ -51,7 +51,7 @@ public class Main {
 
 //work 4
 
-    public static void main(String[] args){
+    static {
         int bottlesMinute = 8;
         int minutesInDay = 1440;
         int minutesIn3Day = 3 * minutesInDay;
@@ -71,7 +71,7 @@ public class Main {
 
 // work 5
 
-public static void main (String[] args) {
+static {
     int totalCans = 120;
     int WhiteCansForClass = 2;
     int BrownCansForClass = 4;
@@ -85,23 +85,23 @@ public static void main (String[] args) {
 
 // work 6
 
-public static void main(String[] args) {
+static {
     int bananas = 5;
     int bananasWeighsGramm = 80;
     int milk = 200;
     double iceCreamWeighsGramm = 2 * 100;
-    int яйца = 4;
-    int яйцаВесят = 70;
+    int eggs = 4;
+    int eggsGramm = 70;
 
-    int totalWeight = (bananas * bananasWeighsGramm) + (milk * 105 / 100) + (int) iceCreamWeighsGramm + (яйца * яйцаВесят);
-    double общийВес = totalWeight / 1000.0;
+    int totalWeight = (bananas * bananasWeighsGramm) + (milk * 105 / 100) + (int) iceCreamWeighsGramm + (eggs * eggsGramm);
+    double totalWeightInKg = totalWeight / 1000.0;
 
-    System.out.println("Общий вес завтрака составляет грамм " + totalWeight + " в кг " +  общийВес);
+    System.out.println("Общий вес завтрака составляет грамм " + totalWeight + " в кг " +  totalWeightInKg);
 }
 
 // work 7
 
-public static void main(String[] args) {
+static {
     int GoalLossWeightKg = 7;
     double dailyLowGoalLossWeightKg = 0.25;
     double dailyHighGoalLossWeightKg = 0.5;
@@ -117,26 +117,26 @@ public static void main(String[] args) {
 
     // work 8
 
-    public static void main(String[] args) {
-    int МашаПолучает = 67760;
-    int ДенисПолучает = 83690;
-    int КристинаПолучает = 76230;
+    static {
+    int mashaSalary = 67760;
+    int denisSalary = 83690;
+    int kristinaSalary = 76230;
 
-    int НоваяЗПМаши = МашаПолучает / 10 + МашаПолучает;
-    int НоваяЗПДениса = ДенисПолучает / 10 + ДенисПолучает;
-    int НоваяЗПКристины = КристинаПолучает / 10 + КристинаПолучает;
+    int mashaNewSalary = mashaSalary / 10 + mashaSalary;
+    int denisNewSalary = denisSalary / 10 + denisSalary;
+    int kristinaNewSalary = kristinaSalary / 10 + kristinaSalary;
 
-    int МашаПолучалаРаньше = МашаПолучает * 12;
-    int ДенисПолучалРаньше = ДенисПолучает * 12;
-    int КристинаПолучалаРаньше = КристинаПолучает * 12;
+    int mashaAnnualIncomeBefore = mashaSalary * 12;
+    int denisAnnualIncomeBefore = denisSalary * 12;
+    int kristinaAnnualIncomeBefore = kristinaSalary * 12;
 
-    int МашаПолучаетТеперь = НоваяЗПМаши * 12;
-    int ДенисПолучаетТеперь = НоваяЗПДениса * 12;
-    int КристинаПолучаетТеперь = НоваяЗПКристины * 12;
+    int mashaAnnualIncomeAfter = mashaNewSalary * 12;
+    int denisAnnualIncomeAfter = denisNewSalary * 12;
+    int kristinaAnnualIncomeAfter = kristinaNewSalary * 12;
 
-    System.out.println("Маша теперь получает " + НоваяЗПМаши + " рублей. Годовой доход вырос на " + (МашаПолучаетТеперь - МашаПолучалаРаньше) + " рублей");
-    System.out.println("Денис теперь получает " + НоваяЗПДениса + " рублей. Годовой доход вырос на " + (ДенисПолучаетТеперь - ДенисПолучалРаньше) + " рублей");
-    System.out.println("Кристина теперь получает " + НоваяЗПКристины + " рублей. Годовой доход вырос на " + (КристинаПолучаетТеперь - КристинаПолучалаРаньше) + " рублей");
+    System.out.println("Маша теперь получает " + mashaNewSalary + " рублей. Годовой доход вырос на " + (mashaAnnualIncomeAfter - mashaAnnualIncomeBefore) + " рублей");
+    System.out.println("Денис теперь получает " + denisNewSalary + " рублей. Годовой доход вырос на " + (denisAnnualIncomeAfter - denisAnnualIncomeBefore) + " рублей");
+    System.out.println("Кристина теперь получает " + kristinaNewSalary + " рублей. Годовой доход вырос на " + (kristinaAnnualIncomeAfter - kristinaAnnualIncomeBefore) + " рублей");
     }
 }
 
