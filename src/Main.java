@@ -64,8 +64,7 @@ public class Main {
     static {
         int wagone = 59;
         if (wagone < 60) {
-            System.out.println("В вагоне есть сидячие места.");
-        }
+            System.out.println("В вагоне есть сидячие места.");}
         if (wagone >= 60 && wagone < 102) {
             System.out.println("В вагоне есть стоячие места.");
         }
